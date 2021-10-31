@@ -2,7 +2,7 @@
 
 import { useContext } from "react";
 import { AuthContext } from "../Auth";
-import { Navigate } from "react-router";
+import { Navigate } from "react-router-dom";
 
 export default function GuestGuard({ children }) {
   const { currentUser } = useContext(AuthContext);
