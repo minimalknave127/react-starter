@@ -1,4 +1,4 @@
-//* APP CORE - wrapped inside router and auth provider *\\
+//* APP CORE - wrapped inside a router and auth provider *\\
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
