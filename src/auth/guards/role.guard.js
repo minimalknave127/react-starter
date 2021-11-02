@@ -4,10 +4,12 @@ import { AuthContext } from "../Auth";
 import { Navigate } from "react-router-dom";
 import * as _ from "lodash";
 
-export default function AuthGuard({ children }) {
+export default function RoleGuard({ children, roles }) {
   const { currentUser } = useContext(AuthContext);
 
-  if (!_.isEmpty(currentUser)) {
+  if (
+    _.difference(currentUser.roles, roles).length < currentUser.roles.length
+  ) {
     return children;
   } else {
     return <Navigate to="/" />;

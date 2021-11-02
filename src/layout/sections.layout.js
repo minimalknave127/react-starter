@@ -11,33 +11,13 @@ export const sections = [
         icon: <User />,
       },
       {
-        title: "Mapa",
-        path: "/app/map",
+        title: "Stoly",
+        path: "/app/tables",
         icon: <Map />,
       },
-    ],
-  },
-  {
-    title: "Docházka",
-    items: [
       {
-        title: "Směny",
-        path: "/app/shifts",
-        icon: <User />,
-      },
-    ],
-  },
-  {
-    title: "Správa",
-    items: [
-      {
-        title: "Pracoviště",
-        path: "/app/workplaces",
-        icon: <User />,
-      },
-      {
-        title: "Zaměstnanci",
-        path: "/app/workers",
+        title: "Menu",
+        path: "/app/menu",
         icon: <User />,
       },
     ],
