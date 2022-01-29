@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: sofiaPro;
+  src: url(./font/Sofia\ Pro\ Regular\ Az.otf);
+}
+
+@font-face {
+  font-family: sofiaPro;
+  src: url(./font//Sofia\ Pro\ Medium\ Az.otf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: sofiaPro;
+  src: url(./font/Sofia\ Pro\ Semi\ Bold\ Az.otf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: sofiaPro;
+  src: url(./font/Sofia\ Pro\ Bold\ Az.otf);
+  font-weight: 700;
+}
+

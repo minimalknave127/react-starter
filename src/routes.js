@@ -16,6 +16,7 @@ import LayoutTablesPage from "./pages/tables/layout.tables";
 import Layout from "./layout";
 import { Outlet } from "react-router";
 import LoginPage from "./pages/auth/login";
+import SignUpPage from "./pages/auth/signup";
 
 export const routes = [
   {
@@ -34,6 +35,10 @@ export const routes = [
         path: "login",
         element: <LoginPage />,
       },
+      {
+        path: "signup",
+        element: <SignUpPage />
+      }
     ],
   },
   {

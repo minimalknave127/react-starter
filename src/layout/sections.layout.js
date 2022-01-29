@@ -11,12 +11,22 @@ export const sections = [
         icon: <User />,
       },
       {
-        title: "Stoly",
+        title: "Novinky",
         path: "/app/tables",
         icon: <Map />,
       },
       {
-        title: "Menu",
+        title: "Úkoly",
+        path: "/app/menu",
+        icon: <User />,
+      },
+      {
+        title: "Dovolené",
+        path: "/app/menu",
+        icon: <User />,
+      },
+      {
+        title: "Chat",
         path: "/app/menu",
         icon: <User />,
       },

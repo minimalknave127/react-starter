@@ -156,8 +156,19 @@ export const theme = createTheme(
       },
       MuiButton: {
         styleOverrides: {
+          contained: {
+            boxShadow: "0px 16px 24px rgba(86, 100, 210, 0.3)",
+            ":hover": {
+              boxShadow: "0px 16px 24px rgba(86, 100, 210, 0.38)",
+            }
+          },
           root: {
             textTransform: "none",
+            borderRadius: ".5rem",
+            paddingTop: 10,
+            paddingBottom: 10,
+            paddingRight: 40,
+            paddingLeft: 40,
           },
         },
       },
@@ -218,8 +229,9 @@ export const theme = createTheme(
       button: {
         fontWeight: 600,
         textTransform: "none",
+        fontSize: "1rem"
       },
-      fontFamily: '"Poppins", sans-serif',
+      fontFamily: '"SofiaPro", sans-serif',
       h1: {
         fontWeight: 600,
         fontSize: "3.5rem",

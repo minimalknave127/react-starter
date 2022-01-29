@@ -10,6 +10,6 @@ export default function AuthGuard({ children }) {
   if (!_.isEmpty(currentUser)) {
     return children;
   } else {
-    return <Navigate to="/" />;
+    return <Navigate to="/login" />;
   }
 }

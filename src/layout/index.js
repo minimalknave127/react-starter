@@ -12,13 +12,19 @@ import Typography from "@mui/material/Typography";
 import { Outlet, useLocation } from "react-router";
 import { sections } from "./sections.layout";
 import NavItem from "./item.layout";
-import { Container } from "@mui/material";
-
+import { Container, Button } from "@mui/material";
+import { auth } from "../firebase";
+import { signOut } from "firebase/auth";
+ 
 const drawerWidth = 240;
 
 function LayoutNav(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
+
+  function logout(){
+    signOut(auth);
+  }
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -55,20 +61,25 @@ function LayoutNav(props) {
           ml: { sm: `${drawerWidth}px` },
         }}
       >
+        <Box sx={{display: "flex", justifyContent: "space-between", alignItems: "center", mx: 2}}>
         <Toolbar>
           <IconButton
             color="inherit"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}
+            sx={{ display: { sm: "none" } }}
           >
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
-            Responsive drawer
+            Intranet
           </Typography>
         </Toolbar>
+        <Box>
+          <Button onClick={logout} >Odhlásit se</Button>
+        </Box>
+        </Box>
       </AppBar>
       <Box
         component="nav"
